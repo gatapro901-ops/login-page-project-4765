@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>تسجيل الدخول</title>
+  <link href='https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css' rel='stylesheet'>
+  <style>
+    .animate-pulse {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    @keyframes pulse {
+      0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      50% {
+        opacity: 0.4;
+        transform: scale(0.9);
+      }
+    }
+  </style>
+</head>
+<body class='h-screen bg-[#020617] flex justify-center items-center'>
+  <div class='w-80 md:w-96 bg-[#151924] p-6 rounded-lg shadow-lg'>
+    <h2 class='text-amber-500 text-2xl font-bold mb-4 animate-pulse'>تسجيل الدخول</h2>
+    <form>
+      <div class='mb-4'>
+        <label for='email' class='block text-amber-500 mb-2'>البريد الإلكتروني</label>
+        <input id='email' type='email' class='bg-[#2c3a50] p-2 pl-10 text-amber-500 rounded-lg w-full' placeholder='ادخل البريد الإلكتروني'>
+      </div>
+      <div class='mb-4'>
+        <label for='password' class='block text-amber-500 mb-2'>كلمة المرور</label>
+        <input id='password' type='password' class='bg-[#2c3a50] p-2 pl-10 text-amber-500 rounded-lg w-full' placeholder='ادخل كلمة المرور'>
+      </div>
+      <div class='mb-4'>
+        <label for='confirm-password' class='block text-amber-500 mb-2'>تأكيد كلمة المرور</label>
+        <input id='confirm-password' type='password' class='bg-[#2c3a50] p-2 pl-10 text-amber-500 rounded-lg w-full' placeholder='تأكيد كلمة المرور'>
+      </div>
+      <button type='submit' class='bg-amber-500 hover:bg-amber-700 text-[#020617] font-bold py-2 px-4 rounded'>تسجيل الدخول</button>
+    </form>
+  </div>
+</body>
+</html>
